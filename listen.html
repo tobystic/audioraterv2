@@ -1,0 +1,72 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+<!-- <?php
+	include ('connectafrolingo.php');
+?> -->
+  <meta charset="utf-8">
+
+  <title>Afrolingo! Donate your voice</title>
+  <meta name="description" content="Afrolingo! Donate your voice">
+  <meta name="author" content="AFApp">
+
+  <link rel="stylesheet" type="text/css" href="audiolisten.css">
+  
+  	<p><h1>afrolingo</h1></p>
+	<hr>
+	<p><i><h2>Thank <mark>you</mark> for using your voice to improve the future of african communication</h2></i></p>	
+	<div id="soundwv">
+	</div>
+
+
+</head>
+
+<body>
+	<div id="root">
+	
+	<p><h4>Choose the language to provide a rating.</p></h4>
+		<div id="targetlang">
+		<form action="">
+        <select>
+			<optgroup label="Select local language">
+				<option value="Swahili">Swahili</option>
+				<option value="Yoruba">Yoruba</option>
+				<option value="Igbo">Igbo</option>
+				<option value="Hausa">Hausa</option>
+				<option value="WAN_pidgin">West African Nigerian Pidgin English</option>
+				<option value="WAC_pidgin">West African Cameroon pidgin</option>
+			</optgroup>
+        </select>
+    </form>
+	</div>
+	<br>
+	<p><h3>Read phrase below, click Play to listen, then rate the interpretation. 'Next' to continue</p></h3>
+	<br>
+	<div class="phrasewindow" id="phrasetext">
+	The last time I attended a concert, there was traffic congestion on every side. I am not sure if this is the norm or if it is due to the new toll fees
+	</div> 
+	<br>
+		
+	<div style="margin-left: 600px" class="stars" data-rating="3">
+  <span class="star">&nbsp;</span>
+  <span class="star">&nbsp;</span>
+  <span class="star">&nbsp;</span>
+  <span class="star">&nbsp;</span>
+  <span class="star">&nbsp;</span>
+	</div>
+	<br>
+   	<audio id=audioplayer1 controls></audio> 
+	<br>
+	
+	<br>
+	<!--button id="nextaudiofile" onclick="nextaudioText(n); n++;"><img src="images/next.png" class="button">Next</button-->
+	<button id="nextaudiofile" @click="nextaudioText(n); n++;"><img src="images/next.png" class="button">Next</button>
+	<br>
+
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="js/aflingo.js"></script>
+
+</div>
+</body>

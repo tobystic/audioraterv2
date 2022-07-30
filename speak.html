@@ -1,0 +1,99 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+<?php
+	include ('connectafrolingo.php');
+?>
+
+  <title>Afrolingo! Donate your voice</title>
+  <meta name="description" content="Afrolingo! Donate your voice">
+  <meta name="author" content="AFApp">
+	  <!--meta charset="utf-8"-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <meta name="google-signin-client_id" content="137997764644-0kbpm2vgucj1cfka2duh6cd5kdhq7bs2.apps.googleusercontent.com">
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	
+	
+  <link rel="stylesheet" type="text/css" href="adcapstylesheet.css">
+
+</head>
+	<p><h1>afrolingo</h1></p>
+	<hr>
+<body>
+
+	<div class="g-signin2" data-onsuccess="onSignIn"></div>
+
+	
+	<p><i><h2>Thank <mark>you</mark> for using your voice to improve the future of african communication</h2></i></p>	
+	<div id="soundwv">
+	</div>
+	<br>
+<div class="splitscreen">
+	<div class="selectlang">
+	<p><h3>... to start tranlating <br> <br />  a. <u>Allow</u> mic access when prompted<br><br />  b. Select fluent and local languages<br> <br />  c. <u>Hold down</u> mic when ready to <br />record your tranlastion out loud and next<br></p>
+<br>
+	<div id="sourcelang">
+	<form action="">
+        <select>
+			<optgroup label="Select source language">
+				<option value="English">English</option>
+				<option value="French">French</option>
+				<option value="Spanish">Spanish</option>
+			</optgroup>
+        </select>
+    </form>
+	</div>
+	<br>
+	<div id="targetlang">
+		<form action="">
+        <select>
+			<optgroup label="Select local language">
+				<option value="Swahili">Swahili</option>
+				<option value="Yoruba">Yoruba</option>
+				<option value="Igbo">Igbo</option>
+				<option value="Hausa">Hausa</option>
+				<option value="WAN_pidgin">West African Nigerian Pidgin English</option>
+				<option value="WAC_pidgin">West African Cameroon pidgin</option>
+			</optgroup>
+        </select>
+    </form>
+	</div>
+	</div>
+
+	<div class="phrasewindow" id="phrasetext">
+	The last time I attended a concert, there was traffic congestion on every side. I am not sure if this is the norm or if it is due to the new toll fees
+	</div> 
+</div>
+
+<div>
+   <button id="torecord" onmousedown="recordAudio()" onmouseup ="stopRecording()"><img src="images/micc.png" class="button"></button>
+   <div id="checkrecording">Hold down mic to record</div>
+   <br>
+   <button id="nextphrase" type="button" onclick="swapText(j); j++;">Next phrase</button>
+  </div> 
+   
+ 	<h4>To listen to the last recording, click Play below </h4>
+
+<audio id=audioplayer controls></audio> 
+
+<div class="data">
+	<p>Profile Details</p>
+	<img id="pic" class="img-circle" width="70" height="70"/>
+	<p>Email Address</p>
+	<p id="email" class="alert alert-danger"></p>
+	<button onclick="signOut()" class="btn btn-danger">SignOut</button>
+	</div>
+
+ <script src="js/aflingo.js"></script>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+</body>
+ 
+</html>

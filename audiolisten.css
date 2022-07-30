@@ -1,0 +1,118 @@
+	
+h1 {
+	color: #F5F5F5;
+	background-color:#2F4F4F;
+	font-size: 36px;
+	margin: 20px;
+	padding-left : 650px;
+	font-family: Malgun Gothic Semilight;
+}
+h2 {
+	font-size: 20px;
+	font-family: Goudy Old Style;
+	color:#708090;
+	padding-left : 500px;
+	}
+	
+h3 {
+	font-size: 20px;
+	font-family: Malgun Gothic Semilight; 
+	color:#2F4F4F ;
+	padding-left : 550px;
+}
+
+h4 {
+	font-size: 16px;
+	font-family: Malgun Gothic Semilight; 
+	color:#2F4F4F ;
+	padding-left : 560px;
+}	
+	
+h5 {
+	font-size: 18px;
+	font-family: Malgun Gothic Semilight; 
+	color:#2F4F4F ;
+	padding-left : 460px;
+}	
+	
+#soundwv {
+	width: 280px;
+	height: 40px;
+	background-image: url("images/adsoundwave.jpg");
+	position: relative;
+	animation: wavey 5s infinite;
+	animation-duration: 10s;
+	}
+@keyframes wavey {
+  from {left: 500px;}
+  to {left: 900px;}
+}
+#soundwv:hover {
+  transform: scaleX(-1);
+}
+#targetlang {
+	padding-left : 600px;
+}
+.phrasewindow {
+  background-color: LightSteelBlue;
+  border: 5px grey;
+  width: 600px;
+  height: 140px;
+  padding: 20px;
+  font-size: 30px;
+  margin-left: 500px;
+  font-family: Goudy Old Style;
+} 
+button {
+    display: inline-block;
+    margin-left: 700px;
+	border-radius: 22px
+}
+#audioplayer1 {
+	position: relative;
+	margin-left: 650px; 
+}
+
+.star{
+  color: goldenrod;
+  font-size: 2.0rem;
+  padding: 0 1rem; /* space out the stars */
+  
+}
+.star::before{
+  content: '\2606';
+  cursor: pointer;
+}
+.star:hover::before{
+  /* the :hover should come first */
+  content: '\2605';
+  color: #bada55;
+}
+.star.rated::before{
+  /* the :hover should come first */
+  content: '\2605';
+}
+
+.star.rated{
+    counter-increment: rateme 1;
+}
+.stars::after{
+    content: counter(rateme) '/5';
+}
+
+.useroptions {
+    display:flex;
+}
+.useroptions .selectspeak {
+    flex: 1;
+}
+.useroptions .selectlisten {
+    flex: 1;
+}
+
+.selectspeak {
+margin-left: 500px;
+ }
+ .selectlisten {
+margin-right: 400px;
+ }

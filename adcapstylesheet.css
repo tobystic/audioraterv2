@@ -1,0 +1,96 @@
+	
+h1 {
+	color: #F5F5F5;
+	background-color:#2F4F4F;
+	font-size: 28px;
+	margin: 20px;
+	padding-left : 650px;
+	font-family: Malgun Gothic Semilight;
+}
+h2 {
+	font-size: 22px;
+	font-family: Goudy Old Style;
+	color:#708090;
+	padding-left : 500px
+}
+h3 {
+	font-size: 16px;
+	font-family: Calibri;
+	color:#708090;
+	padding-left : 100px
+}
+.g-signin2{
+			margin-left:1200px;
+			margin-top:0px;
+		}
+.data{
+	display:none;
+	margin-left:1600px;
+	margin-top:0px;
+}
+		
+#soundwv {
+	width: 260px;
+	height: 50px;
+	background-image: url('images/adsoundwavee.jpg');
+	position: relative;
+	animation: wavey 8s infinite;
+	animation-duration: 15s;
+	
+}
+@keyframes wavey {
+  from {left: 500px;}
+  to {left: 900px;}
+}
+#soundwv:hover {
+  transform: scaleX(-1);
+}
+
+.splitscreen {
+    display:flex;
+}
+.splitscreen .selectlang {
+    flex: 1;
+}
+.splitscreen .phrasewindow {
+    flex: 1;
+}
+
+#sourcelang {
+	padding-left : 10px;
+}
+#targetlang {
+	padding-left : 10px;
+}
+.phrasewindow {
+  background-color: LightSteelBlue;
+  border: 5px grey;
+  width: 300px;
+  height: 220px;
+  padding: 20px;
+  font-size: 30px;
+  margin-right: 500px;
+  font-family: Goudy Old Style;
+} 
+
+button {
+    display: inline-block;
+    margin-left: 760px;
+	border-radius: 22px
+}
+#checkrecording {
+	padding-left : 500px;
+	color: #2F4F4F;
+}
+
+h4 {
+	font-size: 14px;
+	font-family: Malgun Gothic Semilight; 
+	color: #2F4F4F ;
+	padding-left : 800px
+}
+
+#audioplayer {
+	position: relative;
+	margin-left: 800px; 
+}
