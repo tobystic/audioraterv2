@@ -20,8 +20,8 @@ jobs:
     - name: GitHub traffic 
       uses: sangonzal/repository-traffic-action@v.0.1.6
       env:
-        TRAFFIC_ACTION_TOKEN: ${{ secrets.TRAFFIC_ACTION_TOKEN }} 
-        REPOSITORY_NAME: "Azure/Azure-Network-Security"
+        TRAFFIC_ACTION_TOKEN: secrets.TRAFFIC_ACTION_TOKEN 
+       # REPOSITORY_NAME: "Azure/Azure-Network-Security"
      
     # Commits files to repository
     - name: Commit changes
