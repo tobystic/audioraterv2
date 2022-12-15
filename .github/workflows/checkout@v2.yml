@@ -1,7 +1,7 @@
 on:
   schedule: 
     # runs every sunday @23:00PM but currently testing at every 20mins
-    - cron: "* /15 * * *"
+    - cron: "*/15 * * * *"
     
 jobs:
   # This workflow contains a single job called "traffic"
